@@ -1,6 +1,77 @@
 :root {
     --text-color-title: #212121;
     --text-color: #757575;
-    --text-acent: #2196F3;
-    --text-whithe: #FFFFFF;
+    --acent: #2196F3;
+    --background: #E5E5E5;
+    --white: #ffffff;
+    --dark: #2F303A;
+}
+/* основные стили */
+body {
+    color: var(--text-color);
+    background-color: var(--white);
+}
+ul {
+    list-style: none;
+}
+.section-title,
+.title {
+    color: var(--text-color-title);
+}
+.logo {
+    color: #000000;
+}
+.logo span {
+    color: var(--acent);
+}
+
+/* стили для меню сайта */
+.site-nav a {
+    color: var(--text-color-title);
+}
+.site-nav a:hover,
+.site-nav a:focus {
+    color: var(--acent);
+}
+.auth-nav a:hover,
+.auth-nav a:focus {
+        color: var(--acent);
+    }
+/* стили для героя */
+.hero {
+    background-color: var(--dark);
+}
+.hero-title {
+    color: var(--white);
+}
+.hero-button {
+    color: var(--white);
+    background-color: var(--acent);
+}
+/* стили для секции наша команда */
+.team {
+    background-color: var(--background);
+}
+.team-list li {
+    background-color: var(--white);
+}
+/* стили для футера */
+footer {
+    background-color: var(--dark);
+}
+.address-list {
+    color: #FFFFFF99;
+}
+.address-list:first-child {
+    color: var(--white);
+}
+/* стили кнопок фильтра в портфолио */
+button {
+    color: var(--text-color-title);
+    background-color: #F5F4FA;
+}
+button:hover,
+button:focus {
+color: var(--white);
+background-color: var(--acent);
 }
