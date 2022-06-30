@@ -5,16 +5,26 @@
     --background: #E5E5E5;
     --white: #ffffff;
     --dark: #2F303A;
+    --black-acent: #000000;
+    --adress-color: #FFFFFF99;
+    --filter-background: #F5F4FA;
 }
 /* основные стили */
 body {
     color: var(--text-color);
     background-color: var(--white);
     font-family: 'Montserrat', sans-serif;
-        font-family: 'Raleway', sans-serif;
-        font-family: 'Roboto', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
-ul {
+.site-nav-list,
+.contact-list,
+.competence-list,
+.work-list,
+.team-list,
+.address-list,
+.portfolio-list,
+.filter-list {
     list-style: none;
 }
 .section-title,
@@ -22,24 +32,33 @@ ul {
     color: var(--text-color-title);
 }
 .logo {
-    color: #000000;
+    color: var(--black-acent)
 }
 .logo span {
     color: var(--acent);
 }
 
 /* стили для меню сайта */
-.site-nav a {
+.site-nav .link {
     color: var(--text-color-title);
 }
-.site-nav a:hover,
-.site-nav a:focus {
+.site-nav .link:hover,
+.site-nav .link:focus {
     color: var(--acent);
 }
-.auth-nav a:hover,
-.auth-nav a:focus {
+.contact-list .link {
+    color: var(--text-color);
+}
+.contact-list .link:hover,
+.contact-list .link:focus {
         color: var(--acent);
     }
+.logo,
+.link, 
+.address-link {
+    text-decoration: none;
+}
+
 /* стили для героя */
 .hero {
     background-color: var(--dark);
@@ -50,31 +69,39 @@ ul {
 .hero-button {
     color: var(--white);
     background-color: var(--acent);
+    cursor: pointer;
+}
+.hero-button:hover,
+.hero-button:focus {
+    color: var(--white);
+    background-color: var(--acent);
 }
 /* стили для секции наша команда */
 .team {
     background-color: var(--background);
 }
-.team-list li {
+.team-item {
     background-color: var(--white);
 }
 /* стили для футера */
-footer {
+.footer {
     background-color: var(--dark);
 }
-.address-list {
-    color: #FFFFFF99;
+.address-link {
+    color: var(--adress-color);
 }
-.address-list:first-child {
+.address-list + .address-list {
     color: var(--white);
 }
+
 /* стили кнопок фильтра в портфолио */
-button {
+.filter-btn {
     color: var(--text-color-title);
-    background-color: #F5F4FA;
+    background-color: var(--filter-background);
+    cursor: pointer;
 }
-button:hover,
-button:focus {
+.filter-btn:hover,
+.filter-btn:focus {
 color: var(--white);
 background-color: var(--acent);
 }
